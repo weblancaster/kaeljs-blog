@@ -1,0 +1,27 @@
+{
+  "name": "Kael",
+  "version": "0.0.2",
+  "description": "Kael is a NodeJS build engine/script that aims flexibility and easy way to blog converting markdown to HTML",
+  "main": "kael.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=0.10.22"
+  },
+  "keywords": [
+    "markdown",
+    "html",
+    "blog"
+  ],
+  "author": "Michael Lancaster",
+  "license": "MIT",
+  "dependencies": {
+    "marked": "~0.3.0",
+    "cli-color": "~0.2.3",
+    "watch": "~0.9.0",
+    "moment": "~2.5.1",
+    "nedb": "~0.10.3",
+    "express": "~3.4.8"
+  }
+}
