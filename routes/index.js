@@ -29,8 +29,6 @@ exports.article = function(db) {
                 return new Error('Error on getting article');
             }
 
-            console.log( doc );
-
             res.render('blog', {
                     content: doc
                 }

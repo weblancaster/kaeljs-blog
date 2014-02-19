@@ -24,6 +24,16 @@ nodemon app.js
 ```
 to watch for changes on the Application and re-start the server.
 
+Open another terminal tab and run
+```ruby
+grunt watch
+```
+to watch for changes on the sass file or you can run
+```ruby
+grunt build
+```
+to generate a production build
+
 ## Contributing
 
 1. Fork it!

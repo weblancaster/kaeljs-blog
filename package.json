@@ -1,5 +1,5 @@
 {
-  "name": "Kael",
+  "name": "Kaeljs-blog",
   "version": "0.0.3",
   "description": "KaelJS is a simplest static site generator built with NodeJS/ExpressJS Handlebars and NeDB.",
   "main": "app.js",
