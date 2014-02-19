@@ -1,4 +1,4 @@
-## Markdown Post
+## Title of my super cool post
 
 **test**
 
