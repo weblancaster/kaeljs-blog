@@ -1,12 +1,22 @@
 
 Kael.js
 ====
-KaelJS is a simplest static site generator built with NodeJS/ExpressJS Handlebars and NeDB.
+KaelJS is a simplest static site generator built with NodeJS/ExpressJS-Handlebars and NeDB.
+
+## Instructions
+
+I will assume you have Node.js installed and basic knowledge of Node.js
 
 Install the node packages.
 ```ruby
 npm install
 ```
+
+Run
+```ruby
+node kael-watch.js
+```
+to watch for changes on the markdown files and update the HTML files.
 
 ## Contributing
 
