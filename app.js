@@ -46,7 +46,7 @@ if ('development' == app.get('env')) {
 app.get('/', routes.listArticles(db));
 
 // article
-app.get('/blog/:title', routes.article);
+app.get('/blog/:title', routes.article(db));
 
 // initialize server and log a message
 http.createServer(app).listen(app.get('port'), function(){
