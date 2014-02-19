@@ -1,8 +1,8 @@
 {
   "name": "Kael",
-  "version": "0.0.2",
-  "description": "Kael is a NodeJS build engine/script that aims flexibility and easy way to blog converting markdown to HTML",
-  "main": "kael.js",
+  "version": "0.0.3",
+  "description": "KaelJS is a simplest static site generator built with NodeJS/ExpressJS Handlebars and NeDB.",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,6 +22,19 @@
     "watch": "~0.9.0",
     "moment": "~2.5.1",
     "nedb": "~0.10.3",
-    "express": "~3.4.8"
+    "express": "~3.4.8",
+    "express3-handlebars": "~0.5.0",
+    "consolidate": "~0.10.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.x",
+    "grunt-contrib-compass": "~0.6.0",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-csslint": "~0.1.2",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-cssmin": "~0.6.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-imagemin": "~0.4.0",
+    "grunt-contrib-htmlmin": "~0.1.3"
   }
 }

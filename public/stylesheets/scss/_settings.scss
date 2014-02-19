@@ -1,0 +1,15 @@
+// CSS 3 support
+@import "compass/css3";
+$experimental-support-for-svg: true;
+
+//font family
+$fontDefault: 'Open Sans', helvetica, sans-serif;
+
+//mixins
+
+// calc-percent: calculate the percent using the target ÷ context
+// formula, expressed as a percentage.  See Chapter 2 of "Responsive
+// Web Design" (Marcotte, A Book Apart, 2011)
+@function calc-percent( $target, $context ) {
+  @return $target / $context * 100%;
+}

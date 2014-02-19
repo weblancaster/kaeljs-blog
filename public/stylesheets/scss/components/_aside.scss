@@ -1,0 +1,26 @@
+.aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: #996497;
+  width: 16%;
+  z-index: 10;
+  @include transform( translate3d(0, 0, -300px) );
+  @include transition(all .3s ease);
+}
+
+#master {
+
+  &.navActive {
+    @include transform( perspective( 1500px ) );
+    @include transform( perspective-origin( 0% 50% ) );
+
+    & .aside {
+      @include transform( translate3d(0, 0, 0) );
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+    }
+  }
+}

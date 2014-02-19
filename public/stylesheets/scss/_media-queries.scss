@@ -1,0 +1,26 @@
+//first breakpoint
+$first_breakpoint: "max-width: 865px";
+$mobile_breakpoint: "max-width: 700px";
+
+.show-for-small {
+  display: none;
+}
+
+//First content breakpoint
+@media all and ($first_breakpoint) {
+
+}
+
+// Last content breakpoint
+@media all and ($last_breakpoint) {
+
+}
+
+
+
+
+
+
+
+
+

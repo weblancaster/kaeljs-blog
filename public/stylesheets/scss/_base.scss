@@ -1,0 +1,46 @@
+// Base
+::selection{ background-color: #fff2a8; color: #000; }
+::moz-selection{ background-color: #fff2a8; color: #000; }
+::webkit-selection{ background-color: #fff2a8; color: #000; }
+
+* {
+  @include box-sizing(border-box);
+}
+
+html {
+  font-size: 62.5%;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font: 1.4rem $fontDefault;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:active, &:focus {
+    outline: none;
+  }
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+//clearfix
+.clearfix:after {
+  display: table;
+  content: "";
+  clear: both;
+}

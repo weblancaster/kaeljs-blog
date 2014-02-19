@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Michael Lancaster - Web Engineer</title>
+
+    <!-- styles -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="stylesheets/normalize.css"/>
+    <link rel="stylesheet" href="stylesheets/app.css"/>
+
+</head>
+<body>
+
+    <div id="master">
+        <!-- aside partial -->
+        {{> aside }}
+
+        <div id="container">
+            <!-- articles nav -->
+            {{> articles-nav }}
+
+            <!-- main content -->
+            {{{body}}}
+
+            <!-- footer partial -->
+            {{> footer }}
+        </div>
+    </div>
+
+    <!-- javascripts -->
+    <script src="javascripts/vendor/jquery.min.js"></script>
+    <script src="javascripts/app.js"></script>
+
+</body>
+</html>

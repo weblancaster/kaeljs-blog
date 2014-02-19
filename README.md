@@ -1,16 +1,11 @@
 
 Kael.js
 ====
-Kael.js is the simplest NodeJS build engine/script that aims flexibility and easy way to generate static HTML from markdown.
+KaelJS is a simplest static site generator built with NodeJS/ExpressJS Handlebars and NeDB.
 
 Install the node packages.
 ```ruby
 npm install
-```
-
-Run the server
-```ruby
-node index.js
 ```
 
 ## Contributing
