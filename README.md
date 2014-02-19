@@ -18,6 +18,12 @@ node kael-watch.js
 ```
 to watch for changes on the markdown files and update the HTML files.
 
+Open another terminal tab and run
+```ruby
+nodemon app.js
+```
+to watch for changes on the Application and re-start the server.
+
 ## Contributing
 
 1. Fork it!
