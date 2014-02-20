@@ -3,11 +3,11 @@
   top: 0;
   left: 0;
   bottom: 0;
-  background: #996497;
-  width: 16%;
+  background: #EA5160;
+  width: 280px;
   z-index: 10;
-  @include transform( translate3d(0, 0, -300px) );
-  @include transition(all .3s ease);
+  @include transform( translateX(-300px) );
+  @include transition(all .3s ease-out);
 }
 
 #master {

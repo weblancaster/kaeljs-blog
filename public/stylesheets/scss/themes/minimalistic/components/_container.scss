@@ -1,0 +1,7 @@
+#container {
+  @include transition(transform .3s ease-out);
+}
+
+.container_inner {
+  padding: 35px 0;
+}

@@ -1,0 +1,15 @@
+// when aside is visible => true
+#app[data-aside-visible="true"] {
+
+  // show aside
+  & .aside {
+    @include transform( translateX(0) );
+  }
+
+  // blur container and resize container
+  & #container {
+    @include transform( translateX(280px) );
+    @include filter( blur(2px) );
+  }
+
+}
