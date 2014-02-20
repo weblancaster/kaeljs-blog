@@ -12,6 +12,7 @@ exports.listArticles = function(db) {
             }
 
             res.render('index', {
+                    title: 'Kaeljs static blog/site generator',
                     articles: docs
                 }
             );
@@ -30,6 +31,7 @@ exports.article = function(db) {
             }
 
             res.render('blog', {
+                    title: doc.title,
                     content: doc
                 }
             );

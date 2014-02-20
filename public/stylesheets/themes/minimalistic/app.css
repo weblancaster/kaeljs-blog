@@ -1,0 +1,349 @@
+/* ==========================================================================
+#   SCSS/COMPASS Modular Project Based.
+#   @settings
+#   @base
+#   @layout
+#   @skin
+#   @media-queries
+#   @plugins ( third part styles )
+#   @ie
+========================================================================== */
+/* ==========================================================================
+@settings
+========================================================================== */
+/* ==========================================================================
+@base
+========================================================================== */
+/* line 2, ../../scss/themes/minimalistic/_base.scss */
+::selection {
+  background-color: #fff2a8;
+  color: #000;
+}
+
+/* line 3, ../../scss/themes/minimalistic/_base.scss */
+::moz-selection {
+  background-color: #fff2a8;
+  color: #000;
+}
+
+/* line 4, ../../scss/themes/minimalistic/_base.scss */
+::webkit-selection {
+  background-color: #fff2a8;
+  color: #000;
+}
+
+/* line 6, ../../scss/themes/minimalistic/_base.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 10, ../../scss/themes/minimalistic/_base.scss */
+html {
+  font-size: 62.5%;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 16, ../../scss/themes/minimalistic/_base.scss */
+body {
+  font: 1.4rem "Open Sans", helvetica, sans-serif;
+}
+
+/* line 20, ../../scss/themes/minimalistic/_base.scss */
+a {
+  text-decoration: none;
+  outline: none;
+}
+/* line 24, ../../scss/themes/minimalistic/_base.scss */
+a:hover {
+  text-decoration: none;
+}
+/* line 28, ../../scss/themes/minimalistic/_base.scss */
+a:active, a:focus {
+  outline: none;
+}
+
+/* line 33, ../../scss/themes/minimalistic/_base.scss */
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 41, ../../scss/themes/minimalistic/_base.scss */
+h1 {
+  margin: 0;
+}
+
+/* line 45, ../../scss/themes/minimalistic/_base.scss */
+.mainView-auto {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+/* line 51, ../../scss/themes/minimalistic/_base.scss */
+.clearfix:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+/* ==========================================================================
+@layout
+========================================================================== */
+/*
+* @app
+*/
+/*
+* @aside
+*/
+/* line 1, ../../scss/themes/minimalistic/components/_aside.scss */
+.aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: #EA5160;
+  width: 280px;
+  z-index: 10;
+  -moz-transform: translateX(-300px);
+  -ms-transform: translateX(-300px);
+  -o-transform: translateX(-300px);
+  -webkit-transform: translateX(-300px);
+  transform: translateX(-300px);
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+/* line 15, ../../scss/themes/minimalistic/components/_aside.scss */
+#master.navActive {
+  -moz-transform: perspective(1500px);
+  -ms-transform: perspective(1500px);
+  -o-transform: perspective(1500px);
+  -webkit-transform: perspective(1500px);
+  transform: perspective(1500px);
+  -moz-transform: perspective-origin(0% 50%);
+  -ms-transform: perspective-origin(0% 50%);
+  -o-transform: perspective-origin(0% 50%);
+  -webkit-transform: perspective-origin(0% 50%);
+  transform: perspective-origin(0% 50%);
+}
+/* line 19, ../../scss/themes/minimalistic/components/_aside.scss */
+#master.navActive .aside {
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+/*
+* @container
+*/
+/* line 1, ../../scss/themes/minimalistic/components/_container.scss */
+#container {
+  -moz-transition: -moz-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+
+/* line 5, ../../scss/themes/minimalistic/components/_container.scss */
+.container_inner {
+  padding: 35px 0;
+}
+
+/*
+* @Nav Articles
+*/
+/* line 1, ../../scss/themes/minimalistic/components/_navAside.scss */
+.navArticles {
+  width: 30px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+/* line 9, ../../scss/themes/minimalistic/components/_navAside.scss */
+.navArticles:hover {
+  opacity: .6;
+}
+
+/* line 16, ../../scss/themes/minimalistic/components/_navAside.scss */
+.navArticles_menu .navArticles_item {
+  background: #28252C;
+  width: 100%;
+  height: 4px;
+  margin: 2px 0;
+  border-radius: 3px;
+}
+
+/*
+* @content
+*/
+/* line 4, ../../scss/themes/minimalistic/components/_content.scss */
+.post {
+  margin: 0 0 30px;
+}
+
+/* line 8, ../../scss/themes/minimalistic/components/_content.scss */
+.post_link {
+  font-size: 2.2rem;
+  color: #333332;
+  display: block;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+/* line 14, ../../scss/themes/minimalistic/components/_content.scss */
+.post_link::first-letter {
+  text-transform: uppercase;
+}
+/* line 18, ../../scss/themes/minimalistic/components/_content.scss */
+.post_link:hover {
+  color: #EA5160;
+  text-shadow: 0px 0px 3px #EA5160;
+}
+
+/* line 24, ../../scss/themes/minimalistic/components/_content.scss */
+.post_title {
+  margin: 0;
+}
+
+/* line 28, ../../scss/themes/minimalistic/components/_content.scss */
+.post_date {
+  display: block;
+  font-size: 1.5rem;
+}
+
+/*
+* @footer
+*/
+/* line 1, ../../scss/themes/minimalistic/components/_footer.scss */
+#footer {
+  width: 100%;
+  height: 100px;
+  padding: 20px 0 0 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-top: 1px solid #F1F0F0;
+  background-image: -webkit-linear-gradient(bottom, #eeeeee, white 99%);
+  background-image: -moz-linear-gradient(bottom, #eeeeee, white 99%);
+  background-image: -o-linear-gradient(bottom, #eeeeee, white 99%);
+  background-image: linear-gradient(to top, #eeeeee, #ffffff 99%);
+}
+
+/* line 17, ../../scss/themes/minimalistic/components/_footer.scss */
+.navMain {
+  overflow: hidden;
+}
+
+/* line 21, ../../scss/themes/minimalistic/components/_footer.scss */
+.header {
+  float: left;
+  min-width: 250px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+/* line 26, ../../scss/themes/minimalistic/components/_footer.scss */
+.header:hover {
+  opacity: 0.6;
+}
+
+/* line 33, ../../scss/themes/minimalistic/components/_footer.scss */
+.navLogo_title {
+  color: #333;
+  display: block;
+  overflow: hidden;
+}
+
+/* line 39, ../../scss/themes/minimalistic/components/_footer.scss */
+.navLogo_thumb {
+  background: url(/images/thumb-pic.jpg) no-repeat center center;
+  width: 55px;
+  height: 55px;
+  display: block;
+  border-radius: 30px;
+  float: left;
+  margin-right: 15px;
+}
+
+/* line 49, ../../scss/themes/minimalistic/components/_footer.scss */
+.navLogo_name {
+  font-size: 1.7rem;
+  color: #333;
+  display: block;
+  margin-top: 10px;
+}
+
+/* line 56, ../../scss/themes/minimalistic/components/_footer.scss */
+.navLogo_role {
+  font-size: 1.2rem;
+  display: block;
+}
+
+/* line 62, ../../scss/themes/minimalistic/components/_footer.scss */
+.navMain_menu {
+  float: right;
+  margin: 14px 0 5px 0;
+}
+
+/* line 67, ../../scss/themes/minimalistic/components/_footer.scss */
+.navMain_menu_items {
+  float: left;
+  margin: 0 0 0 20px;
+}
+/* line 71, ../../scss/themes/minimalistic/components/_footer.scss */
+.navMain_menu_items a {
+  color: #333;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+/* line 77, ../../scss/themes/minimalistic/components/_footer.scss */
+.navMain_menu_items a:hover {
+  color: #aaa;
+}
+
+/*
+* @states
+*/
+/* line 5, ../../scss/themes/minimalistic/components/_states.scss */
+#app[data-aside-visible="true"] .aside {
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+/* line 10, ../../scss/themes/minimalistic/components/_states.scss */
+#app[data-aside-visible="true"] #container {
+  -moz-transform: translateX(280px);
+  -ms-transform: translateX(280px);
+  -o-transform: translateX(280px);
+  -webkit-transform: translateX(280px);
+  transform: translateX(280px);
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+}

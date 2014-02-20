@@ -1,0 +1,31 @@
+#content {}
+
+// posts
+.post{
+  margin: 0 0 30px;
+}
+
+.post_link {
+  font-size: 2.2rem;
+  color: #333332;
+  display: block;
+  @include transition(all .3s ease-out);
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    color: #EA5160;
+    text-shadow: 0px 0px 3px #EA5160;
+  }
+}
+
+.post_title {
+  margin: 0;
+}
+
+.post_date {
+  display: block;
+  font-size: 1.5rem;
+}

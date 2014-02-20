@@ -1,10 +1,14 @@
 .navArticles {
   width: 30px;
-  position: absolute;
-  top: 22px;
-  left: 450px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
   cursor: pointer;
-  display: none;
+  @include transition(all .3s ease-out);
+
+  &:hover {
+    opacity: .6;
+  }
 }
 
 .navArticles_menu {

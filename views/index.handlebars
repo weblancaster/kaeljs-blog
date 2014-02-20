@@ -4,11 +4,10 @@
     {{#articles}}
     <!-- articles -->
     <article class="post">
-        <section class="post_content">
-            <a href="/blog/{{ path }}" title="{{ title }}" class="post_link">
-                <h2 class="post_title"> {{ title }} </h2>
-            </a>
-        </section>
+        <a href="/blog/{{ path }}" title="{{ title }}" class="post_link">
+            <h2 class="post_title"> {{ title }} </h2>
+            <span class="post_date"> {{ date }} </span>
+        </a>
     </article>
     <!-- articles / end -->
     {{/articles}}

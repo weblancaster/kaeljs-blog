@@ -1,0 +1,89 @@
+#footer {
+  width: 100%;
+  height: 100px;
+  padding: 20px 0 0 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-top: 1px solid #F1F0F0;
+  background-image: -webkit-linear-gradient(bottom, #eee, #fff 99%);
+  background-image: -moz-linear-gradient(bottom, #eee, #fff 99%);
+  background-image: -o-linear-gradient(bottom, #eee, #fff 99%);
+  background-image: linear-gradient(to top, #eee, #fff 99%);
+}
+
+// Logo footer
+.navMain {
+  overflow: hidden;
+}
+
+.header {
+  float: left;
+  min-width: 250px;
+  @include transition(all .3s ease-out);
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.navLogo {}
+
+.navLogo_title {
+  color: #333;
+  display: block;
+  overflow: hidden;
+}
+
+.navLogo_thumb {
+  background: url(/images/thumb-pic.jpg) no-repeat center center;
+  width: 55px;
+  height: 55px;
+  display: block;
+  border-radius: 30px;
+  float: left;
+  margin-right: 15px;
+}
+
+.navLogo_name {
+  font-size: 1.7rem;
+  color: #333;
+  display: block;
+  margin-top: 10px;
+}
+
+.navLogo_role {
+  font-size: 1.2rem;
+  display: block;
+}
+
+// nav footer
+.navMain_menu {
+  float: right;
+  margin: 14px 0 5px 0;
+}
+
+.navMain_menu_items {
+  float: left;
+  margin: 0 0 0 20px;
+
+  & a {
+    color: #333;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    @include transition(all .3s ease-out);
+
+    &:hover {
+      color: #aaa;
+    }
+  }
+}
+
+
+
+
+
+
+
+
