@@ -1,4 +1,9 @@
 /*
+* @app
+*/
+@import "components/_app";
+
+/*
 * @aside
 */
 @import "components/_aside";
@@ -22,3 +27,8 @@
 * @footer
 */
 @import "components/_footer";
+
+/*
+* @states
+*/
+@import "components/_states";
