@@ -48,6 +48,12 @@ app.get('/', routes.listArticles(db));
 // article
 app.get('/blog/:title', routes.article(db));
 
+// about page
+app.get('/about', routes.about(db));
+
+// lab page
+app.get('/lab', routes.lab(db));
+
 // initialize server and log a message
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

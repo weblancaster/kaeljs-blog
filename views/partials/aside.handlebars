@@ -1,5 +1,14 @@
 <!-- aside -->
 <aside class="aside" id="aside">
-
+    <ul class="articlesList">
+        {{#articles}}
+        <li class="articleList_item">
+            <a href="/blog/{{ path }}" title="{{ title }}" class="articleList_item_link">
+                <h2 class="articleList_item_title"> {{ title }} </h2>
+                <span class="articleList_item_date"> {{ date }} </span>
+            </a>
+        </li>
+        {{/articles}}
+    </ul>
 </aside>
 <!-- aside / end -->
