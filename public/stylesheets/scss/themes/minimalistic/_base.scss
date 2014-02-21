@@ -1,3 +1,6 @@
+// import Google font
+@import url(http://fonts.googleapis.com/css?family=Domine);
+
 // Base
 ::selection{ background-color: #fff2a8; color: #000; }
 ::moz-selection{ background-color: #fff2a8; color: #000; }
@@ -38,13 +41,35 @@ li {
   padding: 0;
 }
 
-h1 {
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
 .mainView-auto {
   margin: 0 auto;
   max-width: 700px;
+}
+
+body[data-page="internal"] {
+  // title 
+  & .articleContent h1,
+  & .articleContent h2,
+  & .pageInternal h1,
+  & .pageInternal h2 {
+    font-size: 3.0rem;
+  }
+
+  & .articleContent p,
+  & .pageInternal p {
+    font-size: 2.0rem;
+    line-height: 33px;
+    letter-spacing: 1px;
+  }
 }
 
 //clearfix

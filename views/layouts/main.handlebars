@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="/stylesheets/themes/minimalistic/app.css"/>
 
 </head>
-<body>
+<body data-page="{{ page }}">
 
     <div id="app" data-aside-visible="false">
         <!-- aside partial -->
@@ -38,14 +38,13 @@
                 {{{body}}}
 
             </div>
-
-            <!-- footer partial -->
-            {{> footer }}
         </div>
+
+        <!-- footer partial -->
+        {{> footer }}
     </div>
 
     <!-- javascripts -->
-    <script src="/javascripts/vendor/jquery.min.js"></script>
     <script src="/javascripts/app.js"></script>
 
 </body>

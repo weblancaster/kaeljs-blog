@@ -5,12 +5,13 @@
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: 20;
+  z-index: 5;
   border-top: 1px solid #F1F0F0;
   background-image: -webkit-linear-gradient(bottom, #eee, #fff 99%);
   background-image: -moz-linear-gradient(bottom, #eee, #fff 99%);
   background-image: -o-linear-gradient(bottom, #eee, #fff 99%);
   background-image: linear-gradient(to top, #eee, #fff 99%);
+  @include transition(transform .3s ease-out);
 }
 
 // Logo footer

@@ -1,5 +1,5 @@
 /*
- * GET home page.
+ * Export modules for specific pages
  */
 
 // List of articles title
@@ -12,6 +12,7 @@ exports.listArticles = function(db) {
 
             res.render('index', {
                     title: 'Kaeljs static blog/site generator',
+                    page: 'index',
                     articles: docs
                 }
             );
@@ -37,6 +38,7 @@ exports.article = function(db) {
 
                 res.render('blog', {
                         title: doc.title,
+                        page: 'internal',
                         content: doc,
                         articles: docs
                     }
@@ -57,6 +59,7 @@ exports.about = function(db) {
 
             res.render('about', {
                     title: 'About page title',
+                    page: 'internal',
                     articles: docs
                 }
             );
@@ -75,6 +78,7 @@ exports.lab = function(db) {
 
             res.render('lab', {
                     title: 'Lab page title',
+                    page: 'internal',
                     articles: docs
                 }
             );

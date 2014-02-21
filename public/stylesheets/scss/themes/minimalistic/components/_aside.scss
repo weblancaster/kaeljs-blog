@@ -6,21 +6,38 @@
   background: #EA5160;
   width: 280px;
   z-index: 10;
+  overflow-y: scroll;
   @include transform( translateX(-300px) );
-  @include transition(all .3s ease-out);
+  @include transition(transform .3s ease-out);
 }
 
-#master {
+// article list navigation
+.articlesList {}
 
-  &.navActive {
-    @include transform( perspective( 1500px ) );
-    @include transform( perspective-origin( 0% 50% ) );
+.articleList_item {
+  border-bottom: 1px solid #EE6976;
+  padding: 10px;
+}
 
-    & .aside {
-      @include transform( translate3d(0, 0, 0) );
-      -webkit-transform-style: preserve-3d;
-      -moz-transform-style: preserve-3d;
-      transform-style: preserve-3d;
-    }
+.articleList_item_link {
+  color: #333;
+  display: block;
+  @include transition(all .3s ease-out);
+
+  &::first-letter {
+    text-transform: uppercase;
   }
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.articleList_item_title {
+  font-size: 1.9rem;
+}
+
+.articleList_item_date {
+  display: block;
+  font-size: 1.2rem;
 }

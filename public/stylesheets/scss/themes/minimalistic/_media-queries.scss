@@ -12,12 +12,8 @@ $mobile_breakpoint: "max-width: 390px";
         max-width: 100%;
         padding: 35px 10px;
     }
-}
 
-// Last content breakpoint
-@media all and ($mobile_breakpoint) {
     // footer
-    // 
     #footer {
         padding: 20px 10px;
     }
@@ -30,6 +26,11 @@ $mobile_breakpoint: "max-width: 390px";
         float: none;
         margin: 0;
     }
+}
+
+// Last content breakpoint
+@media all and ($mobile_breakpoint) {
+    
 }
 
 
