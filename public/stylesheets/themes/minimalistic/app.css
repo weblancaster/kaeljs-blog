@@ -311,12 +311,6 @@ body[data-page="internal"] .articleContent p, body[data-page="internal"] .pageIn
   font-size: 1.5rem;
 }
 
-/* line 34, ../../scss/themes/minimalistic/components/_content.scss */
-.pageTitle {
-  font-size: 2.8rem;
-  color: #333;
-}
-
 /*
 * @footer
 */
