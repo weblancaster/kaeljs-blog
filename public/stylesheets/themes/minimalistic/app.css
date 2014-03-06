@@ -232,17 +232,6 @@ body[data-page="internal"] .articleContent p, body[data-page="internal"] .pageIn
     opacity: 1;
   }
 }
-@-o-keyframes fadeIn {
-  /* line 42, ../../scss/themes/minimalistic/components/_container.scss */
-  from {
-    opacity: 0;
-  }
-
-  /* line 45, ../../scss/themes/minimalistic/components/_container.scss */
-  to {
-    opacity: 1;
-  }
-}
 /*
 * @Nav Articles
 */
